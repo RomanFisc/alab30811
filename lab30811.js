@@ -83,3 +83,55 @@ const under25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 console.log("all numbers under 25:", under25);
 //checks to see if all numbers are under 25
 
+
+//Part 2 practical math
+//total distance 1500 miles
+// 55mph 30 mpg
+// 60mph 28 mpg
+// 75mph 23 mpg
+// fuel budget 175, $3 per gallon
+
+// checking amount of gallons needed at each speed
+const totalTrip = 1500
+const mph55 = totalTrip / 30
+console.log("total amount of gallons you need at 55mph:", mph55)
+const mph60 = totalTrip / 28
+console.log("Total gallons at 60mph:", mph60)
+const mph75 = totalTrip / 23
+console.log("Total gallons at 75mph:", mph75)
+
+//checking if budget will cover at each speed
+const budget55 = mph55 * 3
+const budget60 = mph60 * 3
+const budget75 = mph75 * 3
+
+
+//telling thhe user if they meet the budget at each speed
+if (budget55 < 175) {
+  console.log("Congrats you are under budget and spent:", budget55)
+} else {
+  console.log("Oh no you are over budget and spent:", budget55)
+}
+
+if (budget60 < 175) {
+  console.log("Congrats you are under budget and spent:", budget60)
+} else {
+  console.log("Oh no you are over budget and spent:", budget60)
+}
+
+if (budget75 < 175) {
+  console.log("Congrats you are under budget and spent:", budget75)
+} else {
+  console.log("Oh no you are over budget and spent:", budget75)
+}
+
+//testing total speed
+const speed55 = 1500 / 55
+console.log("Total amount of hours:", speed55)
+
+const speed60 = 1500 / 60
+console.log("Total amount of hours:", speed60)
+
+const speed75 = 1500 / 75
+console.log(`Total amount of hours: ${speed75}`)
+
