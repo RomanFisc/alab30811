@@ -67,9 +67,19 @@ const n4 = 5;
 //adding checks
 const div5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) === 0
 //checks if all numbers are divisible by 5
+console.log(" ")
 console.log("are all the numbers divisble by 5?:", div5)
-
 const firstBigger = n1 > n4
 // checks if the first number is bigger than the last
+console.log(" ")
 console.log("is the first number bigger than the last?:", firstBigger)
+
+const mathChain = (((n1 - n2) * n3) % n4)
+// follow the math chain
+console.log(" ")
+console.log("1st num substracted by 2nd num then multiplied by 3rd num and divided by 4th num to find remainer", mathChain);
+
+const under25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
+console.log("all numbers under 25:", under25);
+//checks to see if all numbers are under 25
 
